@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\tools\\**",
+                "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\**",
+                "D:\\Arduino\\tools\\**",
+                "D:\\Arduino\\hardware\\arduino\\avr\\**",
+                "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.6.22\\**",
+                "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\**"
+            ],
+            "forcedInclude": [
+                "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\cores\\arduino\\Arduino.h"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "G:/VS2017/VC/Tools/MSVC/14.12.25827/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
