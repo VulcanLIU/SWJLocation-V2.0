@@ -60,7 +60,7 @@
 三.编译下载
 ------
   1.板子选择  
-  
+  <img src=https://github.com/VulcanLIU/SWJLocation-V2.0/blob/master/%E6%9D%BF%E5%AD%90%E9%80%89%E6%8B%A9.png>
   2.开始烧录
 
 
