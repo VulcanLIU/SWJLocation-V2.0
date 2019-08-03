@@ -3,7 +3,8 @@
 ========
 一.介绍
 --------
-      这是一种基于航位推算原理设计的平面定位装置，属于相对定位方式，存在积分误差且误差随时间增大。前一版本使用Arduino nano写，这一版本使用Stm32duino（F103c8t6）。  
+      这是一种基于航位推算原理设计的平面定位装置，属于相对定位方式，存在积分误差且误差随时间增大。
+      前一版本使用Arduino nano写，这一版本使用Stm32duino（F103c8t6）。  
       
  二.使用准备
  --------
@@ -15,7 +16,9 @@
       * 按照Adafruit官方说明，还需要安装Adafruit GFX library，详见https://github.com/adafruit/Adafruit-GFX-Library  
 
    ### 3.修改stm32duino的variant.h文件以开启相应外设
-      我电脑中该文件的路径在C:\Users\Vulcan\AppData\Local\Arduino15\packages\STM32\hardware\stm32\1.5.0\variants\BLUEPILL_F103XX\variant.h 以供参考，appdata文件夹为隐藏文件夹注意寻找方法。
+      我电脑中该文件的路径在
+      C:\Users\Vulcan\AppData\Local\Arduino15\packages\STM32\hardware\stm32\1.5.0\variants\BLUEPILL_F103XX\variant.h 
+      以供参考，appdata文件夹为隐藏文件夹注意寻找方法。
 -----
 #### 修改方法
 1.将
