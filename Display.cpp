@@ -19,6 +19,8 @@ Display::Display()
 
 void Display::begin()
 {
+
+  Serial.println("Display::begin()");
   display.begin(SSD1306_SWITCHCAPVCC, 0x3c);
   display.display();
   delay(3000);
@@ -54,11 +56,11 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
   display.clearDisplay();
-  //��ʾϵͳ����ʱ��
+  //锟斤拷示系统锟斤拷锟斤拷时锟斤拷
   display.print("Time:");
   display.print(millis());
 
-  //��ʾ����PWM
+  //锟斤拷示锟斤拷锟斤拷PWM
   display.setCursor(PWML1_x, PWML1_y);
   display.print("L1:");
   display.print(L1_speed);
@@ -73,7 +75,7 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.print("R2:");
   display.print(R2_speed);
 
-  //��ʾ���������
+  //锟斤拷示锟斤拷锟斤拷锟斤拷锟斤拷锟�
   display.setCursor(X_encode_x, X_encode_y);
   display.print("X_mm:");
   display.print(pos_x);
@@ -84,11 +86,11 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.print("P_mm:");
   display.print(pos_p);
 
-  // 	//��ʾң����״̬
+  // 	//锟斤拷示遥锟斤拷锟斤拷状态
   // 	display.setCursor(X_real_x,X_encode_y);
   // 	display.print("PS2:");
   // 	display.print(state);
-  //��ʾ�����Ƕ�
+  //锟斤拷示锟斤拷锟斤拷锟角讹拷
   display.setCursor(Yaw_x, Yaw_y);
   display.print("Yaw:");
   display.print(Yaw);

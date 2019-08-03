@@ -1,6 +1,8 @@
 {
     "board": "STM32:stm32:GenF1",
-    "configuration": "pnum=BLUEPILL_F103C6,upload_method=STLinkMethod,xserial=generic,usb=none,xusb=FS,opt=osstd,rtlib=nano",
-    "sketch": "Location.ino",
-    "port": "COM12"
+    "configuration": "pnum=BLUEPILL_F103C8,upload_method=STLinkMethod,xserial=generic,usb=none,xusb=FS,opt=osstd,rtlib=nano",
+    "sketch": "..\\SWJLocation-V2.0\\SWJLocation-V2.0.ino",
+    "output": "../build",
+    "debugger": "stlink",
+    "port": "COM50"
 }
