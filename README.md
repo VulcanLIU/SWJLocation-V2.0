@@ -76,5 +76,6 @@
    
    <img src=https://github.com/VulcanLIU/SWJLocation-V2.0/blob/master/PCB%E6%96%87%E4%BB%B6/%E5%8E%9F%E7%90%86%E5%9B%BE.png>  
 2. PCB设计
-   
+   <img src=https://github.com/VulcanLIU/SWJLocation-V2.0/blob/master/PCB%E6%96%87%E4%BB%B6/PCB%E8%AE%BE%E8%AE%A1.jpg>  
 3. 成品
+   <img src=https://github.com/VulcanLIU/SWJLocation-V2.0/blob/master/PCB%E6%96%87%E4%BB%B6/%E6%88%90%E5%93%81.jpg>  
