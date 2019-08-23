@@ -1,0 +1,29 @@
+*** Creating Trace Output File '.\obj\GONGC.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\cortexm3_macro.o"'
+### List of Objects: adding '".\obj\startup_stm32f10x_hd.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\stm32f10x_tim.o"'
+### List of Objects: adding '".\obj\stm32f10x_flash.o"'
+### List of Objects: adding '".\obj\stm32f10x_gpio.o"'
+### List of Objects: adding '".\obj\stm32f10x_rcc.o"'
+### List of Objects: adding '".\obj\rcc_configuration.o"'
+### List of Objects: adding '".\obj\delay.o"'
+### List of Objects: adding '".\obj\usart_configuration.o"'
+### List of Objects: adding '".\obj\stm32f10x_usart.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\cortexm3_macro.o" ".\obj\startup_stm32f10x_hd.o" ".\obj\main.o" ".\obj\stm32f10x_tim.o" ".\obj\stm32f10x_flash.o" ".\obj\stm32f10x_gpio.o" ".\obj\stm32f10x_rcc.o" ".\obj\rcc_configuration.o" ".\obj\delay.o" ".\obj\usart_configuration.o" ".\obj\stm32f10x_usart.o" --library_type=microlib --strict --scatter ".\obj\GONGC.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\list\GONGC.map" -o ".\obj\GONGC.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\GONGC.axf'
+### ADS-LD Command File: '.\obj\GONGC.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\GONGC.lnp', Handle=0x00000298
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\GONGC.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

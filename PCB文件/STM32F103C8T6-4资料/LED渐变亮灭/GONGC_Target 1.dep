@@ -1,0 +1,96 @@
+Dependencies for Project 'GONGC', Target 'Target 1': (DO NOT MODIFY !)
+F (.\source\startup\cortexm3_macro.s)(0x48D5D9EC)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"--list .\list\cortexm3_macro.lst --xref -o .\obj\cortexm3_macro.o --depend .\obj\cortexm3_macro.d)
+F (.\source\startup\startup_stm32f10x_hd.s)(0x4E44756A)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"--list .\list\startup_stm32f10x_hd.lst --xref -o .\obj\startup_stm32f10x_hd.o --depend .\obj\startup_stm32f10x_hd.d)
+F (.\user\main.c)(0x51A7645C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_lib.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_flash.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_gpio.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_nvic.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_systick.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_tim.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_usart.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\wlib\SYS\RCC_Configuration.h)(0x52B548A8)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\wlib\USART\USART_Configuration.h)(0x52B548A8)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\wlib\delay\delay.h)(0x4D2D9FC0)
+I (D:\Program Files\KEIL4\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (.\source\FWLib\src\stm32f10x_tim.c)(0x48D844A0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\stm32f10x_tim.o --omf_browse .\obj\stm32f10x_tim.crf --depend .\obj\stm32f10x_tim.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_tim.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+F (.\source\FWLib\src\stm32f10x_flash.c)(0x48D844A0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\stm32f10x_flash.o --omf_browse .\obj\stm32f10x_flash.crf --depend .\obj\stm32f10x_flash.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_flash.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+F (.\source\FWLib\src\stm32f10x_gpio.c)(0x48D844A0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\stm32f10x_gpio.o --omf_browse .\obj\stm32f10x_gpio.crf --depend .\obj\stm32f10x_gpio.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_gpio.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+F (.\source\FWLib\src\stm32f10x_rcc.c)(0x48D844A0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\stm32f10x_rcc.o --omf_browse .\obj\stm32f10x_rcc.crf --depend .\obj\stm32f10x_rcc.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+F (.\source\wlib\delay\delay.c)(0x4E48F10C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\delay.o --omf_browse .\obj\delay.crf --depend .\obj\delay.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_lib.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_flash.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_gpio.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_nvic.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_systick.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_tim.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_usart.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\wlib\delay\delay.h)(0x4D2D9FC0)
+F (.\source\FWLib\src\stm32f10x_usart.c)(0x48D844A0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\stm32f10x_usart.o --omf_browse .\obj\stm32f10x_usart.crf --depend .\obj\stm32f10x_usart.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_usart.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+F (.\source\wlib\SYS\RCC_Configuration.c)(0x4E49453E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\rcc_configuration.o --omf_browse .\obj\rcc_configuration.crf --depend .\obj\rcc_configuration.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_lib.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_flash.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_gpio.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_nvic.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_systick.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_tim.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_usart.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\wlib\SYS\RCC_Configuration.h)(0x52B548A8)
+F (.\source\wlib\USART\USART_Configuration.c)(0x4E525F12)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\source\wlib\delay -I.\source\wlib\SYS -I.\source\wlib\USART -I.\source\FWLib\inc -I.\user-I "D:\Program Files\KEIL4\ARM\RV31\INC"-I "D:\Program Files\KEIL4\ARM\CMSIS\Include"-I "D:\Program Files\KEIL4\ARM\Inc\ST\STM32F10x"-o .\obj\usart_configuration.o --omf_browse .\obj\usart_configuration.crf --depend .\obj\usart_configuration.d)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_lib.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_map.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\user\stm32f10x_conf.h)(0x52B548F6)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_type.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\cortexm3_macro.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_flash.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_gpio.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_nvic.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_rcc.h)(0x48D84430)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_systick.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_tim.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\FWLib\inc\stm32f10x_usart.h)(0x48D84432)
+I (C:\Documents and Settings\Administrator\桌面\STM32F103C8T6-4资料\LED渐变亮灭\source\wlib\USART\USART_Configuration.h)(0x52B548A8)
+I (D:\Program Files\KEIL4\ARM\ARMCC\include\stdio.h)(0x51C7B744)

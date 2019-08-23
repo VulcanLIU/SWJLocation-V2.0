@@ -1,0 +1,18 @@
+Added Component: Designator=U1(STM32F103C8T6-4)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=stm32TX Pin=U1-7
+Added Pin To Net: NetName=stm32RX Pin=U1-8
+Added Pin To Net: NetName=INT1A Pin=U1-11
+Added Pin To Net: NetName=INT1B Pin=U1-12
+Added Pin To Net: NetName=INT0A Pin=U1-13
+Added Pin To Net: NetName=INT0B Pin=U1-14
+Added Pin To Net: NetName=SCL Pin=U1-16
+Added Pin To Net: NetName=SDA Pin=U1-17
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=VCC Pin=U1-19
+Added Pin To Net: NetName=3.3V Pin=U1-20
+Added Pin To Net: NetName=SWDIO Pin=U1-30
+Added Pin To Net: NetName=SWCLK Pin=U1-31
+Added Pin To Net: NetName=TX1 Pin=U1-36
+Added Pin To Net: NetName=RX1 Pin=U1-37
+Added Member To Class: ClassName=Sheet1 Member=Component U1 Stm32F103

@@ -1,0 +1,71 @@
+Removed Pin From Net: NetName=TX1 Pin=*-2
+Removed Pin From Net: NetName=SDA Pin=Arduino NANO-1-7
+Removed Pin From Net: NetName=SCL Pin=Arduino NANO-1-8
+Removed Pin From Net: NetName=VCC Pin=Arduino NANO-1-11
+Removed Pin From Net: NetName=GND Pin=Arduino NANO-1-13
+Removed Pin From Net: NetName=TX1 Pin=Arduino NANO-1-15
+Removed Pin From Net: NetName=INT0A Pin=Arduino NANO-1-19
+Removed Pin From Net: NetName=INT1A Pin=Arduino NANO-1-20
+Removed Pin From Net: NetName=INT0B Pin=Arduino NANO-1-24
+Removed Pin From Net: NetName=INT1B Pin=Arduino NANO-1-25
+Removed Pin From Net: NetName=SDA Pin=GY25-1-5
+Removed Pin From Net: NetName=SCL Pin=GY25-1-6
+Removed Member From Class: ClassName=Sheet1 Member=Arduino NANO-1
+Added Component: Designator=P1(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR1X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=U1(STM32F103C8T6-4)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=TX1 Pin=*-3
+Added Pin To Net: NetName=SDA Pin=P1-2
+Added Pin To Net: NetName=SCL Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P3-4
+Added Pin To Net: NetName=INT1A Pin=U1-11
+Added Pin To Net: NetName=INT1B Pin=U1-12
+Added Pin To Net: NetName=INT0A Pin=U1-13
+Added Pin To Net: NetName=INT0B Pin=U1-14
+Added Pin To Net: NetName=SCL Pin=U1-16
+Added Pin To Net: NetName=SDA Pin=U1-17
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=VCC Pin=U1-19
+Added Pin To Net: NetName=TX1 Pin=U1-36
+Added Pin To Net: NetName=3.3V Pin=P3-1
+Added Pin To Net: NetName=3.3V Pin=U1-20
+Added Net: Name=3.3V
+Added Pin To Net: NetName=NetGY25-1_5 Pin=GY25-1-5
+Added Pin To Net: NetName=NetGY25-1_5 Pin=P1-1
+Added Net: Name=NetGY25-1_5
+Added Pin To Net: NetName=NetGY25-1_6 Pin=GY25-1-6
+Added Pin To Net: NetName=NetGY25-1_6 Pin=P2-1
+Added Net: Name=NetGY25-1_6
+Added Pin To Net: NetName=RX1 Pin=*-2
+Added Pin To Net: NetName=RX1 Pin=U1-37
+Added Net: Name=RX1
+Added Pin To Net: NetName=stm32RX Pin=GY25-1-3
+Added Pin To Net: NetName=stm32RX Pin=U1-8
+Added Net: Name=stm32RX
+Added Pin To Net: NetName=stm32TX Pin=GY25-1-2
+Added Pin To Net: NetName=stm32TX Pin=U1-7
+Added Net: Name=stm32TX
+Added Pin To Net: NetName=SWCLK Pin=P3-3
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=P3-2
+Added Net: Name=SWDIO
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 1
+Added Member To Class: ClassName=Sheet1 Member=Component P2 Header 2
+Added Member To Class: ClassName=Sheet1 Member=Component P3 Header 4
+Added Member To Class: ClassName=Sheet1 Member=Component SSD1306 128x32
+Added Member To Class: ClassName=Sheet1 Member=Component U1 Stm32F103
+Added Room: Name=Sheet1

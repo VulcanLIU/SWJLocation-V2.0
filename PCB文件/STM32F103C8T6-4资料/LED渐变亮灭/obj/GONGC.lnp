@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+".\obj\cortexm3_macro.o"
+".\obj\startup_stm32f10x_hd.o"
+".\obj\main.o"
+".\obj\stm32f10x_tim.o"
+".\obj\stm32f10x_flash.o"
+".\obj\stm32f10x_gpio.o"
+".\obj\stm32f10x_rcc.o"
+".\obj\delay.o"
+".\obj\stm32f10x_usart.o"
+".\obj\rcc_configuration.o"
+".\obj\usart_configuration.o"
+--library_type=microlib --strict --scatter ".\obj\GONGC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\list\GONGC.map" -o .\obj\GONGC.axf

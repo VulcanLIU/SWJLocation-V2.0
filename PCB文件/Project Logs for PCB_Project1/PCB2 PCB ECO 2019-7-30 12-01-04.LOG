@@ -1,0 +1,23 @@
+Removed Member From Class: ClassName=Sheet1 Member=J?
+Added Component: Designator=J2(6pin2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J3(6pin2)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=VCC Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=VCC Pin=J3-2
+Added Pin To Net: NetName=INT0A Pin=J2-3
+Added Pin To Net: NetName=INT0A Pin=U1-13
+Added Net: Name=INT0A
+Added Pin To Net: NetName=INT0B Pin=J2-4
+Added Pin To Net: NetName=INT0B Pin=U1-14
+Added Net: Name=INT0B
+Added Pin To Net: NetName=INT1A Pin=J3-3
+Added Pin To Net: NetName=INT1A Pin=U1-11
+Added Net: Name=INT1A
+Added Pin To Net: NetName=INT1B Pin=J3-4
+Added Pin To Net: NetName=INT1B Pin=U1-12
+Added Net: Name=INT1B
+Added Member To Class: ClassName=Sheet1 Member=Component J2 ENcoder
+Added Member To Class: ClassName=Sheet1 Member=Component J3 ENcoder
