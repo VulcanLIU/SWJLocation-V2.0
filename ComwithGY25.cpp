@@ -72,8 +72,6 @@ void ComwithGY25::refresh()
 			YPR[0] = int16_t(Re_buf[1] << 8 | Re_buf[2]) / -100.00; //鍚堟垚鏁版嵁锛屽幓鎺夊皬鏁扮偣鍚?2浣?
 			YPR[1] = int16_t(Re_buf[3] << 8 | Re_buf[4]) / 100.00;
 			YPR[2] = int16_t(Re_buf[5] << 8 | Re_buf[6]) / 100.00;
-			Serial1.print("YPR[0]:");
-			Serial1.println(YPR[0]);
 		}
 		sign = 0;
 	}

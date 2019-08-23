@@ -19,11 +19,9 @@ Display::Display()
 
 void Display::begin()
 {
-
-  Serial.println("Display::begin()");
   display.begin(SSD1306_SWITCHCAPVCC, 0x3c);
   display.display();
-  delay(3000);
+  delay(1000);
 
   display.clearDisplay();
 }
@@ -56,11 +54,11 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
   display.clearDisplay();
-  //锟斤拷示系统锟斤拷锟斤拷时锟斤拷
+  //闁跨喐鏋婚幏椋庛仛缁崵绮洪柨鐔告灮閹风兘鏁撻弬銈嗗閺冨爼鏁撻弬銈嗗
   display.print("Time:");
   display.print(millis());
 
-  //锟斤拷示锟斤拷锟斤拷PWM
+  //闁跨喐鏋婚幏椋庛仛闁跨喐鏋婚幏鐑芥晸閺傘倖瀚筆WM
   display.setCursor(PWML1_x, PWML1_y);
   display.print("L1:");
   display.print(L1_speed);
@@ -75,7 +73,7 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.print("R2:");
   display.print(R2_speed);
 
-  //锟斤拷示锟斤拷锟斤拷锟斤拷锟斤拷锟�
+  //闁跨喐鏋婚幏椋庛仛闁跨喐鏋婚幏鐑芥晸閺傘倖瀚归柨鐔告灮閹风兘鏁撻弬銈嗗闁跨噦鎷�
   display.setCursor(X_encode_x, X_encode_y);
   display.print("X_mm:");
   display.print(pos_x);
@@ -86,11 +84,11 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.print("P_mm:");
   display.print(pos_p);
 
-  // 	//锟斤拷示遥锟斤拷锟斤拷状态
+  // 	//闁跨喐鏋婚幏椋庛仛闁儵鏁撻弬銈嗗闁跨喐鏋婚幏椋庡Ц閹拷
   // 	display.setCursor(X_real_x,X_encode_y);
   // 	display.print("PS2:");
   // 	display.print(state);
-  //锟斤拷示锟斤拷锟斤拷锟角讹拷
+  //闁跨喐鏋婚幏椋庛仛闁跨喐鏋婚幏鐑芥晸閺傘倖瀚归柨鐔活潡鐠佽瀚�
   display.setCursor(Yaw_x, Yaw_y);
   display.print("Yaw:");
   display.print(Yaw);

@@ -2,18 +2,18 @@
 #include "Display.h"
 
 //#define Serial1_DEBUG 1
-#define POS_DEBUG 1
-//#define DATA_OUTPUT 1
+//#define POS_DEBUG 1
+#define DATA_OUTPUT 1
 
 double x = 0;//涓偣浣嶇疆提供给过过过
 double y = 0;
 double p = 0;
 
-long int x_step = 0;
-long int y_step = 0;
+long int L_step = 0;
+long int R_step = 0;
 
-long int x_step_total = 0;
-long int y_step_total = 0;
+long int L_step_total = 0;
+long int R_step_total = 0;
 
 //鎺ョ嚎淇℃伅
 static const int INT0A = PB0;//INT0
@@ -27,15 +27,15 @@ const int x_line = 1000;
 const int y_line = 1000;
 
 //鐢ㄤ簬涓插彛杈撳嚭
-double _x = 0;
-double _y = 0;
+double L = 0;
+double R = 0;
 
 double x2 = 0;
 double y2 = 0;
 int a = 0;
 
-void blinkX();
-void blinkY();
+void blinkL();
+void blinkR();
 
 //void POS_begin();
 //void POS_clear();
@@ -55,7 +55,7 @@ void setup()
 void loop()
 {
   GY25.refresh();
-
+ 
   if (millis() - _millis >= 5)
   {
     POS_refresh();
@@ -72,45 +72,46 @@ void loop()
 #endif
 
 #ifdef Serial_DEBUG
-    Serial1.print("X_step:");
-    Serial1.print(x_step_total);
-    Serial1.print("Y_step:");
-    Serial1.print(y_step_total);
+    Serial1.print("L_step:");
+    Serial1.print(L_step_total);
+    Serial1.print("R_step:");
+    Serial1.print(R_step_total);
 #endif
 
     Serial1.println();
 
     _millis = millis();
   }
+  Serial1Event();
 }
 
-void blinkX()
+void blinkL()
 {
-  int xstate = digitalRead(INT0B);
-  if (xstate == HIGH)
+  int Lstate = digitalRead(INT0B);
+  if (Lstate == HIGH)
   {
-    x_step++;
-    x_step_total ++;
+    L_step++;
+    L_step_total ++;
   }
   else
   {
-    x_step--;
-    x_step_total --;
+    L_step--;
+    L_step_total --;
   }
 }
 
-void blinkY()
+void blinkR()
 {
-  int ystate = digitalRead(INT1B);
-  if (ystate == HIGH)
+  int Rstate = digitalRead(INT1B);
+  if (Rstate == HIGH)
   {
-    y_step++;
-    y_step_total ++;
+    R_step++;
+    R_step_total ++;
   }
   else
   {
-    y_step--;
-    y_step_total --;
+    R_step--;
+    R_step_total --;
   }
 }
 
@@ -122,14 +123,14 @@ void POS_begin()
   pinMode(INT0B, INPUT_PULLUP);
   pinMode(INT1B, INPUT);
 
-  attachInterrupt(digitalPinToInterrupt(INT0A), blinkX, FALLING);
-  attachInterrupt(digitalPinToInterrupt(INT1A), blinkY, FALLING);
+  attachInterrupt(digitalPinToInterrupt(INT0A), blinkL, FALLING);
+  attachInterrupt(digitalPinToInterrupt(INT1A), blinkR, FALLING);
 }
 
 void POS_clear()
 {
-  x_step = 0;
-  y_step = 0;
+  L_step = 0;
+  R_step = 0;
 
   x = 0;
   y = 0;
@@ -140,25 +141,25 @@ void POS_refresh()
 {
   //缁熻鍒锋柊鏃堕棿鍐? fff国家
 
-  _x = double(x_step) / x_line * PI * wheel_d;
-  x_step = 0;//琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
-  _y = double(y_step) / y_line * PI * wheel_d; //琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
-  y_step = 0;
-  p = GY25.YPR[0] / 180.00 * PI;
+  L = double(L_step) / x_line * PI * wheel_d;
+  L_step = 0;//琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
+  R = double(R_step) / y_line * PI * wheel_d; //琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
+  R_step = 0;
+  p = double(GY25.YPR[0])/ 180.00 * PI;
 
   //鍒樺睍楣忕殑绠楁硶
-  x2 += (_y) * sin(p + PI / 4) - (_x) * cos(p + PI / 4) ;//
-  y2 += (_y) * cos(p + PI / 4) + (_x) * sin(p + PI / 4);
+  x2 -= (R) * cos(p-PI/4) - (L) * sin(p-PI/4);
+  y2 += (L) * cos(p-PI/4) + (R) * sin(p-PI/4);
 
   x = x2;
   y = y2;
   p = p / PI * 180;
 
 #ifdef POS_DEBUG
-  Serial1.print("x_step_total:");
-  Serial1.print(x_step_total);
-  Serial1.print("y_step_total:");
-  Serial1.print(y_step_total);
+  Serial1.print("L_step_total:");
+  Serial1.print(L_step_total);
+  Serial1.print("R_step_total:");
+  Serial1.print(R_step_total);
 
   Serial1.println();
 #endif
@@ -171,8 +172,8 @@ void Serial1Event()
     String str = Serial1.readStringUntil('\n');
     str.toLowerCase();
     str = str.substring(0, str.length() - 1);
-    //Serial1.println(str);
-    //Serial1.println(str.length());
+    Serial1.println(str);
+    Serial1.println(str.length());
 
     if (str == "clear") {
       GY25.correctYaw();
