@@ -1,3 +1,6 @@
+#include <Arduino.h>
+#line 1 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+#line 1 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
 #include "ComwithGY25.h"
 #include "Display.h"
 
@@ -45,6 +48,19 @@ void blinkR();
 long int _millis = 0;
 
 // The setup() function runs once each time the micro-controller starts
+#line 48 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+void setup();
+#line 56 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+void loop();
+#line 150 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+void POS_begin();
+#line 162 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+void POS_clear();
+#line 172 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+void POS_refresh();
+#line 198 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+void Serial1Event();
+#line 48 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
 void setup()
 {
   GY25.begin();
@@ -229,3 +245,4 @@ void Serial1Event()
     }
   }
 }
+

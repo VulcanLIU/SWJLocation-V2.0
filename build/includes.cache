@@ -1,0 +1,77 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\cores\\arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\variants\\BLUEPILL_F103XX"
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\SWJLocation-V2.0.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\ComwithGY25.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\Display.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\Display.cpp",
+    "Include": "Adafruit_SSD1306.h",
+    "Includepath": "C:\\Users\\Vulcan\\Documents\\Arduino\\libraries\\Adafruit_SSD1306-master"
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\Display.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\Display.cpp",
+    "Include": "Adafruit_GFX.h",
+    "Includepath": "C:\\Users\\Vulcan\\Documents\\Arduino\\libraries\\Adafruit-GFX-Library-master"
+  },
+  {
+    "Sourcefile": "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\build\\sketch\\Display.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vulcan\\Documents\\Arduino\\libraries\\Adafruit_SSD1306-master\\Adafruit_SSD1306.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vulcan\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.5.0\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vulcan\\Documents\\Arduino\\libraries\\Adafruit-GFX-Library-master\\Adafruit_GFX.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vulcan\\Documents\\Arduino\\libraries\\Adafruit-GFX-Library-master\\Adafruit_SPITFT.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vulcan\\Documents\\Arduino\\libraries\\Adafruit-GFX-Library-master\\glcdfont.c",
+    "Include": "",
+    "Includepath": ""
+  }
+]

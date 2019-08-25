@@ -1,10 +1,12 @@
-#include "ComwithGY25.h"
-#include "Display.h"
+# 1 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+# 1 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
+# 2 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino" 2
+# 3 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino" 2
 
 //#define Serial1_DEBUG 1
 //#define POS_DEBUG 1
 //#define DATA_OUTPUT 1
-#define DATA_OUTPUT_BYTES 1
+
 
 double x = 0; //涓偣浣嶇疆提供给过过过
 double y = 0;
@@ -17,10 +19,10 @@ long int L_step_total = 0;
 long int R_step_total = 0;
 
 //鎺ョ嚎淇℃伅
-static const int INT0A = PB0; //INT0
-static const int INT0B = PB1;
-static const int INT1A = PA6; //INT1
-static const int INT1B = PA7;
+static const int INT0A = 28 /* A8*/; //INT0
+static const int INT0B = 29 /* A9*/;
+static const int INT1A = 26 /* A6*/; //INT1
+static const int INT1B = 27 /* A7*/;
 
 //鐗╃悊淇℃伅
 const double wheel_d = 38; //杞洿寰?38mm
@@ -62,17 +64,7 @@ void loop()
     POS_refresh();
 
     dp.displayXYP(x, y, p);
-
-#ifdef DATA_OUTPUT
-    Serial1.print("x:");
-    Serial1.print(x);
-    Serial1.print("y:");
-    Serial1.print(y);
-    Serial1.print("p:");
-    Serial1.print(p);
-#endif
-
-#ifdef DATA_OUTPUT_BYTES
+# 76 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
     int32_t x0 = x * 100;
     byte x1 = x0 & 0xff;
     byte x2 = (x0 >> 8) & 0xff;
@@ -101,15 +93,7 @@ void loop()
     Serial1.write(p1);
     Serial1.write(p2);
     Serial1.write(0xAA);
-#endif
-
-#ifdef Serial_DEBUG
-    Serial1.print("L_step:");
-    Serial1.print(L_step_total);
-    Serial1.print("R_step:");
-    Serial1.print(R_step_total);
-#endif
-
+# 113 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
     Serial1.println();
 
     _millis = millis();
@@ -120,7 +104,7 @@ void loop()
 void blinkL()
 {
   int Lstate = digitalRead(INT0B);
-  if (Lstate == HIGH)
+  if (Lstate == 0x1)
   {
     L_step++;
     L_step_total++;
@@ -135,7 +119,7 @@ void blinkL()
 void blinkR()
 {
   int Rstate = digitalRead(INT1B);
-  if (Rstate == HIGH)
+  if (Rstate == 0x1)
   {
     R_step++;
     R_step_total++;
@@ -149,14 +133,14 @@ void blinkR()
 
 void POS_begin()
 {
-  pinMode(INT0A, INPUT_PULLUP);
-  pinMode(INT1A, INPUT);
+  pinMode(INT0A, 0x2);
+  pinMode(INT1A, 0x0);
 
-  pinMode(INT0B, INPUT_PULLUP);
-  pinMode(INT1B, INPUT);
+  pinMode(INT0B, 0x2);
+  pinMode(INT1B, 0x0);
 
-  attachInterrupt(digitalPinToInterrupt(INT0A), blinkL, FALLING);
-  attachInterrupt(digitalPinToInterrupt(INT1A), blinkR, FALLING);
+  attachInterrupt((((((uint32_t)INT0A < 35) ? digitalPin[INT0A] : NC) != NC) ? INT0A : NC /* -1*/), blinkL, 0x3);
+  attachInterrupt((((((uint32_t)INT1A < 35) ? digitalPin[INT1A] : NC) != NC) ? INT1A : NC /* -1*/), blinkR, 0x3);
 }
 
 void POS_clear()
@@ -171,28 +155,20 @@ void POS_clear()
 
 void POS_refresh()
 {
-  L = double(L_step) / x_line * PI * wheel_d;
-  L_step = 0;                                 //琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
-  R = double(R_step) / y_line * PI * wheel_d; //琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
+  L = double(L_step) / x_line * 3.1415926535897932384626433832795 * wheel_d;
+  L_step = 0; //琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
+  R = double(R_step) / y_line * 3.1415926535897932384626433832795 * wheel_d; //琛岃蛋鐨勮窛绂? 鍗曚綅mm锛?
   R_step = 0;
-  p = double(GY25.YPR[0]) / 180.00 * PI;
+  p = double(GY25.YPR[0]) / 180.00 * 3.1415926535897932384626433832795;
 
   //鍒樺睍楣忕殑绠楁硶
-  x2 -= (R)*cos(p - PI / 4) - (L)*sin(p - PI / 4);
-  y2 += (L)*cos(p - PI / 4) + (R)*sin(p - PI / 4);
+  x2 -= (R)*cos(p - 3.1415926535897932384626433832795 / 4) - (L)*sin(p - 3.1415926535897932384626433832795 / 4);
+  y2 += (L)*cos(p - 3.1415926535897932384626433832795 / 4) + (R)*sin(p - 3.1415926535897932384626433832795 / 4);
 
   x = x2;
   y = y2;
-  p = p / PI * 180;
-
-#ifdef POS_DEBUG
-  Serial1.print("L_step_total:");
-  Serial1.print(L_step_total);
-  Serial1.print("R_step_total:");
-  Serial1.print(R_step_total);
-
-  Serial1.println();
-#endif
+  p = p / 3.1415926535897932384626433832795 * 180;
+# 196 "g:\\A-05-过去——I盘拓展\\B-毕业设计\\A-7-28 Version2-Stm32\\E-新程序资料\\SWJLocation-V2.0\\SWJLocation-V2.0.ino"
 }
 
 void Serial1Event()
