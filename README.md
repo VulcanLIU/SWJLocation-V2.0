@@ -79,3 +79,41 @@
    <img src=https://github.com/VulcanLIU/SWJLocation-V2.0/blob/master/PCB%E6%96%87%E4%BB%B6/PCB%E8%AE%BE%E8%AE%A1.jpg>  
 3. 成品
    <img src=https://github.com/VulcanLIU/SWJLocation-V2.0/blob/master/PCB%E6%96%87%E4%BB%B6/%E6%88%90%E5%93%81.jpg>  
+
+2019/8/25更新
+======
+一.添加帧格式传输
+      
+      考虑到有的单片机将String转换为float不方便，因此添加帧格式通信方式。
+      帧头0x55,帧尾0xAA。
+      
+   ```c++
+    int32_t x0 = x * 100;
+    byte x1 = x0 & 0xff;
+    byte x2 = (x0 >> 8) & 0xff;
+    byte x3 = (x0 >> 16) & 0xff;
+    byte x4 = (x0 >> 24) & 0xff;
+
+    int32_t y0 = y * 100;
+    byte y1 = y0 & 0xff;
+    byte y2 = (y0 >> 8) & 0xff;
+    byte y3 = (y0 >> 16) & 0xff;
+    byte y4 = (y0 >> 24) & 0xff;
+
+    int16_t p0 = p * 100;
+    byte p1 = p0 & 0xff;
+    byte p2 = (p0 >> 8) & 0xff;
+
+    Serial1.write(0x55);
+    Serial1.write(x1);
+    Serial1.write(x2);
+    Serial1.write(x3);
+    Serial1.write(x4);
+    Serial1.write(y1);
+    Serial1.write(y2);
+    Serial1.write(y3);
+    Serial1.write(y4);
+    Serial1.write(p1);
+    Serial1.write(p2);
+    Serial1.write(0xAA);
+   ```
