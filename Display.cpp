@@ -54,11 +54,11 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
   display.clearDisplay();
-  //闁跨喐鏋婚幏椋庛仛缁崵绮洪柨鐔告灮閹风兘鏁撻弬銈嗗閺冨爼鏁撻弬銈嗗
+  //闂佽法鍠愰弸濠氬箯妞嬪簺浠涚紒顖濆吹缁椽鏌ㄩ悢鍛婄伄闁归鍏橀弫鎾诲棘閵堝棗顏堕柡鍐ㄧ埣閺佹捇寮妶鍡楊伓
   display.print("Time:");
   display.print(millis());
 
-  //闁跨喐鏋婚幏椋庛仛闁跨喐鏋婚幏鐑芥晸閺傘倖瀚筆WM
+  //闂佽法鍠愰弸濠氬箯妞嬪簺浠涢梺璺ㄥ枑閺嬪骞忛悜鑺ユ櫢闁哄倶鍊栫€氱瓎WM
   display.setCursor(PWML1_x, PWML1_y);
   display.print("L1:");
   display.print(L1_speed);
@@ -73,7 +73,7 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.print("R2:");
   display.print(R2_speed);
 
-  //闁跨喐鏋婚幏椋庛仛闁跨喐鏋婚幏鐑芥晸閺傘倖瀚归柨鐔告灮閹风兘鏁撻弬銈嗗闁跨噦鎷�
+  //闂佽法鍠愰弸濠氬箯妞嬪簺浠涢梺璺ㄥ枑閺嬪骞忛悜鑺ユ櫢闁哄倶鍊栫€氬綊鏌ㄩ悢鍛婄伄闁归鍏橀弫鎾诲棘閵堝棗顏堕梺璺ㄥ櫐閹凤拷
   display.setCursor(X_encode_x, X_encode_y);
   display.print("X_mm:");
   display.print(pos_x);
@@ -84,11 +84,11 @@ void Display::refresh(int L1_speed, int L2_speed, int R1_speed, int R2_speed, do
   display.print("P_mm:");
   display.print(pos_p);
 
-  // 	//闁跨喐鏋婚幏椋庛仛闁儵鏁撻弬銈嗗闁跨喐鏋婚幏椋庡Ц閹拷
+  // 	//闂佽法鍠愰弸濠氬箯妞嬪簺浠涢梺顑惧劦閺佹捇寮妶鍡楊伓闂佽法鍠愰弸濠氬箯妞嬪骸笑闁诡剨鎷�
   // 	display.setCursor(X_real_x,X_encode_y);
   // 	display.print("PS2:");
   // 	display.print(state);
-  //闁跨喐鏋婚幏椋庛仛闁跨喐鏋婚幏鐑芥晸閺傘倖瀚归柨鐔活潡鐠佽瀚�
+  //闂佽法鍠愰弸濠氬箯妞嬪簺浠涢梺璺ㄥ枑閺嬪骞忛悜鑺ユ櫢闁哄倶鍊栫€氬綊鏌ㄩ悢娲绘健閻犱浇顫夌€氾拷
   display.setCursor(Yaw_x, Yaw_y);
   display.print("Yaw:");
   display.print(Yaw);

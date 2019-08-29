@@ -194,8 +194,8 @@ void POS_refresh()
   p = double(GY25.YPR[0]) / 180.00 * PI;
 
   //鍒樺睍楣忕殑绠楁硶
-  x2 -= (R)*cos(p - PI / 4) - (L)*sin(p - PI / 4);
-  y2 += (L)*cos(p - PI / 4) + (R)*sin(p - PI / 4);
+  x2 += (R)*cos(p - PI / 4) - (L)*sin(p - PI / 4);
+  y2 -= (L)*cos(p - PI / 4) + (R)*sin(p - PI / 4);
 
   x = x2;
   y = y2;

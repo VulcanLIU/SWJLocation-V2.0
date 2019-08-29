@@ -1,5 +1,5 @@
 # SWJLocation-V2.0
-平面定位系统Version1-Stm32duino版
+平面定位系统Version2-Stm32duino版
 ========
 一.介绍
 --------
